@@ -9,8 +9,8 @@ def analyse_sentiment():
     sentence = request.get_json()['sentence']
     polarity = TextBlob(sentence).sentences[0].polarity
     return jsonify(
-        sentence=sentence,
-        polarity=polarity
+        sentence="this",
+        polarity="cat"
     )
 
 
